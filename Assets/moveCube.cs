@@ -74,4 +74,9 @@ public class moveCube : MonoBehaviour {
     {
         Debug.Log("CallBack!!! + s");
     }
+
+    public static void PreCloudBuild()
+    {
+        Debug.Log("moveCube::PreCloudBuild");
+    }
 }
