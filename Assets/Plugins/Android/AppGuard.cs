@@ -71,20 +71,20 @@ public class AppGuard : EditorWindow{
 
     public static void PreCloudBuild()
     {
-        UnityEngine.Debug.Log("[AppGuard] PreCloudBuild!!!");
-        //jdk = Environment.GetEnvironmentVariable("JAVA_HOME");
+        //UnityEngine.Debug.Log("[AppGuard] PreCloudBuild!!!");
+        jdk = "/usr";
         //UnityEngine.Debug.Log("[AppGuard] jdk : " + jdk);
-        //sdk = Environment.GetEnvironmentVariable("ANDROID_SDK_ROOT");
+        sdk = "/usr";
         //UnityEngine.Debug.Log("[AppGuard] sdk : " + sdk);
-        //assetsPath = Application.dataPath;
+        assetsPath = Application.dataPath;
         //UnityEngine.Debug.Log("[AppGuard] assetsPath : " + assetsPath);
-        //projectRootPath = assetsPath + "/../";
+        projectRootPath = assetsPath + "/../";
         //UnityEngine.Debug.Log("[AppGuard] projectRootPath : " + projectRootPath);
-        //unityVersion = Application.unityVersion;
+        unityVersion = Application.unityVersion;
         //UnityEngine.Debug.Log("[AppGuard] unityVersion : " + unityVersion);
-        //appGuardAppKey = "zgOFnTikMpHhu7LJwjDvcVGpZS5RtRdLKw5RsXKtMICRm0ARQfeiJQLLOlcA2q3e";
+        appGuardAppKey = "zgOFnTikMpHhu7LJwjDvcVGpZS5RtRdLKw5RsXKtMICRm0ARQfeiJQLLOlcA2q3e";
         //InitSetting();
-        //InjectAppGuardCode();
+        InjectAppGuardCode();
     }
 
     public static void PostCloudBuild()
